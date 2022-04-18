@@ -1,6 +1,6 @@
 public class Main {
 
-    public static void main(String[] args) {
+    public static void main(String[] args) throws MoodAnalyzerException {
 //        MoodAnalyzer moodAnalyzer = new MoodAnalyzer();
 //        String sadMood = moodAnalyzer.analyzeMood("i am in sad mood");
 //        System.out.println(sadMood);

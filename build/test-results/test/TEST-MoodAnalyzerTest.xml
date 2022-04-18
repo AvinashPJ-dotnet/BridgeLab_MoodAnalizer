@@ -1,8 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="MoodAnalyzerTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2022-04-18T11:32:18" hostname="AVINASHPJ-PC" time="0.035">
+<testsuite name="MoodAnalyzerTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2022-04-18T13:33:05" hostname="AVINASHPJ-PC" time="30.514">
   <properties/>
-  <testcase name="givenNullMoodMessage_AnalyseMoodWithException_ResultShouldMatch()" classname="MoodAnalyzerTest" time="0.035"/>
-  <system-out><![CDATA[HAPPY
-]]></system-out>
+  <testcase name="givenNullMoodMessage_AnalyseMoodWithException_ThrowException()" classname="MoodAnalyzerTest" time="30.514"/>
+  <system-out><![CDATA[]]></system-out>
   <system-err><![CDATA[]]></system-err>
 </testsuite>
