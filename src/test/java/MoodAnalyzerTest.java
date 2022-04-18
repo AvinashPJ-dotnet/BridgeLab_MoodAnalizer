@@ -29,4 +29,5 @@ public class MoodAnalyzerTest {
         String mood = moodAnalyzer.analyzeMoodAgain();
         Assertions.assertEquals("SAD",mood);
     }
+
 }
