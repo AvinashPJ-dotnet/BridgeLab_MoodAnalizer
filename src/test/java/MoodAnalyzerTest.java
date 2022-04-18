@@ -30,4 +30,10 @@ public class MoodAnalyzerTest {
         Assertions.assertEquals("SAD",mood);
     }
 
+    @Test
+    void givenNullMoodMessage_AnalyseMoodWithException_ResultShouldMatch() {
+        MoodAnalyzer moodAnalyzer = new MoodAnalyzer(null);
+        String mood = moodAnalyzer.analyzeMoodAgain();
+        Assertions.assertEquals("HAPPY",mood);
+    }
 }
