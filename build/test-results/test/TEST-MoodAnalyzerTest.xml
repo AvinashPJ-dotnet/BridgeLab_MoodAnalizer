@@ -1,8 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="MoodAnalyzerTest" tests="2" skipped="0" failures="0" errors="0" timestamp="2022-04-18T10:57:06" hostname="AVINASHPJ-PC" time="0.043">
+<testsuite name="MoodAnalyzerTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2022-04-18T11:02:37" hostname="AVINASHPJ-PC" time="0.036">
   <properties/>
-  <testcase name="givenMood_AnalyseSadMood_ResultShouldMatch()" classname="MoodAnalyzerTest" time="0.037"/>
-  <testcase name="givenMood_AnalyseHappyMood_ResultShouldMatch()" classname="MoodAnalyzerTest" time="0.003"/>
+  <testcase name="givenMood_AnalyseHappyMood_ResultShouldMatch()" classname="MoodAnalyzerTest" time="0.036"/>
   <system-out><![CDATA[]]></system-out>
   <system-err><![CDATA[]]></system-err>
 </testsuite>
