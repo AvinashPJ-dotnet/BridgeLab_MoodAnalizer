@@ -6,37 +6,38 @@ public class MoodAnalyzerTest {
     void givenMood_AnalyseSadMood_ResultShouldMatch() throws MoodAnalyzerException {
         MoodAnalyzer moodAnalyzer = new MoodAnalyzer();
         String mood = moodAnalyzer.analyzeMood("I am in sad mood");
-        Assertions.assertEquals("SAD",mood);
+        Assertions.assertEquals("SAD", mood);
     }
 
     @Test
     void givenMood_AnalyseHappyMood_ResultShouldMatch() throws MoodAnalyzerException {
         MoodAnalyzer moodAnalyzer = new MoodAnalyzer();
         String mood = moodAnalyzer.analyzeMood("I am in any mood");
-        Assertions.assertEquals("HAPPY",mood);
+        Assertions.assertEquals("HAPPY", mood);
     }
 
     @Test
     void givenHappyMoodMessage_AnalyseMoodUsingConstructor_ResultShouldMatch() throws MoodAnalyzerException {
         MoodAnalyzer moodAnalyzer = new MoodAnalyzer("I am in any mood");
         String mood = moodAnalyzer.analyzeMoodAgain();
-        Assertions.assertEquals("HAPPY",mood);
+        Assertions.assertEquals("HAPPY", mood);
     }
 
     @Test
     void givenSadMoodMessage_AnalyseMoodUsingConstructor_ResultShouldMatch() throws MoodAnalyzerException {
         MoodAnalyzer moodAnalyzer = new MoodAnalyzer("I am in sad mood");
         String mood = moodAnalyzer.analyzeMoodAgain();
-        Assertions.assertEquals("SAD",mood);
+        Assertions.assertEquals("SAD", mood);
     }
 
     @Test
-    void givenNullMoodMessage_AnalyseMoodWithException_ThrowException() {
+    void givenNullMessage_AnalyseMoodWithException_ThrowException() {
         MoodAnalyzer moodAnalyzer = new MoodAnalyzer(null);
         try {
             moodAnalyzer.analyzeMoodAgain();
         } catch (MoodAnalyzerException e) {
-            Assertions.assertEquals(MoodAnalyzerException.ExceptionTypes.ENTERED_NULL,e.types);
+            Assertions.assertEquals(MoodAnalyzerException.ExceptionTypes.ENTERED_NULL, e.types);
         }
     }
+
 }
